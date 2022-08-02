@@ -22,4 +22,10 @@ public class CloudVendorApiService {
         return "Cloud vendor created successfully!";
     }
 
+    @PutMapping
+    public String updateCloudVendorDetails(@RequestBody CloudVendor cloudVendor) {
+        this.cloudVendor = cloudVendor;
+        return "Cloud vendor updated successfully!";
+    }
+
 }
