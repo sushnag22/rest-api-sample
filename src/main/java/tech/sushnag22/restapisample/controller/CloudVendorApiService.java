@@ -16,4 +16,10 @@ public class CloudVendorApiService {
 //                "United States of America");
     }
 
+    @PostMapping
+    public String createCloudVendorDetails(@RequestBody CloudVendor cloudVendor) {
+        this.cloudVendor = cloudVendor;
+        return "Cloud vendor created successfully!";
+    }
+
 }
