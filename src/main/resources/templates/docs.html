@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Documentation</title>
+</head>
+<body>
+<h2>Endpoint: /cloud-vendors</h2>
+<p>Request Type: POST</p>
+<p>Description: Creates cloud vendor details.</p>
+<p>Example: { "vendorId" : "1", "vendorName" : "Amazon", "vendorAddress" : "US"  }</p>
+<p>Response Code 200 - OK: Cloud vendor created successfully!</p>
+
+<h2>Endpoint: /cloud-vendors/1</h2>
+<p>Request Type: GET</p>
+<p>Description: Retrieves cloud vendor details.</p>
+<p>Response Code 200 - OK: Everything worked as expected. Cloud vendor details are returned in JSON. Returns
+    { "vendorId" : "1", "vendorName" : "Amazon", "vendorAddress" : "US"  }</p>
+
+<h2>Endpoint: /cloud-vendors</h2>
+<p>Request Type: PUT</p>
+<p>Description: Updates cloud vendor details.</p>
+<p>Example: { "vendorId" : "1", "vendorName" : "Google", "vendorAddress" : "US"  }</p>
+<p>Response Code 200 - OK: Cloud vendor updated successfully!</p>
+
+<h2>Endpoint: /cloud-vendors/1</h2>
+<p>Request Type: DELETE</p>
+<p>Description: Deletes cloud vendor details.</p>
+<p>Response Code 200 - OK: Cloud vendor deleted successfully!</p>
+</body>
+</html>
